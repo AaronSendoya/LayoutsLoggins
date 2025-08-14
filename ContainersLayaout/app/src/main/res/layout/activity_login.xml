@@ -3,58 +3,105 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
-
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="123dp"
-        android:layout_height="113dp"
-        android:layout_marginTop="80dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/ic_launcher_foreground" />
+    android:layout_height="match_parent"
+    android:background="@drawable/inicio_salar">
 
     <LinearLayout
-        android:layout_width="325dp"
-        android:layout_height="452dp"
-        android:layout_marginTop="228dp"
+        android:id="@+id/linearLayout3"
+        android:layout_width="353dp"
+        android:layout_height="269dp"
+        android:layout_marginTop="4dp"
         android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout4">
 
         <TextView
             android:id="@+id/textView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="10dp"
+            android:layout_marginTop="20dp"
             android:gravity="center"
-            android:layout_marginTop="30dp"
-            android:text="Inicio de Sesión" />
+            android:text="Inicio de Sesión"
+            android:textColor="@color/black"
+            android:textSize="25dp"
+            android:textStyle="bold" />
 
         <EditText
             android:id="@+id/editTextText"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="60dp"
+            android:layout_marginTop="60dp"
+            android:background="@drawable/rounded_edittext"
             android:ems="10"
-            android:layout_marginTop="80dp"
+            android:inputType="text"
+            android:paddingStart="20dp"
             android:text="Nombre de Usuario" />
 
         <EditText
             android:id="@+id/editTextText2"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/rounded_edittext"
             android:ems="10"
             android:inputType="text"
+            android:paddingStart="20dp"
             android:text="Contraseña" />
 
-        <Button
-            android:id="@+id/button3"
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="362dp"
+        android:layout_height="182dp"
+        android:layout_marginTop="24dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.489"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout3">
+
+        <TextView
+            android:id="@+id/editTextText3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="50dp"
-            android:text="Ingresar" />
+            android:layout_marginTop="70dp"
+            android:gravity="center"
+            android:inputType="text"
+            android:text="¿Olvidó su Contraseña?"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/rounded_button"
+            android:backgroundTint="#2FFFFFFF"
+            android:foregroundTint="#D5FFFFFF"
+            android:textStyle="bold"
+            android:text="INGRESAR" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="355dp"
+        android:layout_height="193dp"
+        android:layout_marginTop="44dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.446"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" >
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/postal_salar" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
