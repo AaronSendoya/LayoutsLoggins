@@ -21,7 +21,7 @@
             android:layout_width="match_parent"
             android:layout_height="40dp"
             android:layout_marginTop="20dp"
-            android:background="@color/light_blue"
+            android:background="@drawable/rounded_edittext"
             android:ems="10"
             android:inputType="text"
             android:paddingStart="20dp"
@@ -33,7 +33,7 @@
             android:layout_width="match_parent"
             android:layout_height="40dp"
             android:layout_marginTop="20dp"
-            android:background="@color/light_blue"
+            android:background="@drawable/rounded_edittext"
             android:ems="10"
 
             android:inputType="text"
@@ -45,7 +45,7 @@
             android:layout_width="match_parent"
             android:layout_height="40dp"
             android:layout_marginTop="20dp"
-            android:background="@color/light_blue"
+            android:background="@drawable/rounded_edittext"
             android:ems="10"
             android:inputType="text"
             android:paddingStart="20dp"
@@ -56,7 +56,7 @@
             android:layout_width="match_parent"
             android:layout_height="40dp"
             android:layout_marginTop="20dp"
-            android:background="@color/light_blue"
+            android:background="@drawable/rounded_edittext"
             android:ems="10"
             android:inputType="text"
             android:paddingStart="20dp"
@@ -107,9 +107,10 @@
             android:id="@+id/button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="10dp"
+            android:layout_margin="20dp"
             android:text="REGISTRAR"
             android:textColor="@color/black"
+            android:background="@drawable/rounded_button"
             android:textSize="20sp"
             android:textStyle="bold" />
 
@@ -117,8 +118,10 @@
             android:id="@+id/textView4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
             android:gravity="center"
-
-            android:text="¿Ya tienes una cuenta?" />
+            android:text="¿Ya tienes una cuenta?"
+            android:textColor="#1E88E5"
+            android:textSize="14sp" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
